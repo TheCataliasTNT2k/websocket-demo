@@ -9,7 +9,7 @@
     <script src="/static/socket_lib.js" type="text/javascript"></script>
 </head>
 <body>
-    {%  set id = session["drone_id"] %}
+    {%  set id = session["client_id"] %}
     ID: {{ id }}<br>
     <label>Empfangene Narichten: <textarea readonly="readonly" id={{ id  + "receive" }}></textarea></label><br>
     <label>Nachricht senden: <textarea name="{{ id  + "send" }}"></textarea></label><br>
